@@ -7,7 +7,7 @@
 </head>
 <body>
 <!--使用flex-col一定要先使用flex-->
-<div class="flex flex-col items-center w-full bg-gray-100 min-h-screen h-auto">
+<div class="flex flex-col items-center w-full bg-gray-200 min-h-screen h-auto">
     <div class="flex-1 flex flex-col w-3/4">
         <nav class="fixed w-3/4 z-20 flex justify-between text-gray-500 bg-gray-100 px-3 drop-shadow-md">
             <div class="flex justify-between items-center space-x-16 py-3 px-4">
@@ -46,7 +46,7 @@
                 </button>
                 <div class="flex items-center">
                     <input type="text"
-                           class="rounded-l-full bg-white text-xs py-2 px-2 focus:outline-none hover:bg-gray-200"
+                           class="z-10 rounded-l-full bg-white text-xs py-2 px-2 focus:outline-none hover:bg-gray-200 focus:ring-2"
                            placeholder="搜索 (ctrl+k)"/>
                     <button class="rounded-r-full bg-white px-2 py-2">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
@@ -273,13 +273,13 @@
             </aside>
             <div class="w-1/5"></div>
             <!--主文章界面-->
-            <main class="flex flex-col flex-grow w-3/5 text-gray-500">
-                <div class="px-5 py-5 space-y-2">
+            <main class="flex flex-col flex-grow w-3/5 text-gray-500 px-5">
+                <div class=" py-5 space-y-2">
                     <h1 class="text-black font-light text-2xl">猫颜</h1>
                     <h3 class="text-xs text-gray-500">提笔，写忧伤，停笔，心怅然。</h3>
                 </div>
                 <!--文章1-->
-                <div class="flex flex-col pt-28 pb-6 px-8 mx-5 my-3 rounded-md bg-cover space-y-5 drop-shadow-md"
+                <div class="flex flex-col pt-28 pb-6 px-8  my-3 rounded-md bg-cover space-y-5 drop-shadow-md text-white"
                      style="background-image: url(https://www.ihewro.com/usr/uploads/2019/01/762065921.jpg)">
                     <div>
                         <div></div>
@@ -318,7 +318,7 @@
                     </div>
                 </div>
                 <!--文章2-->
-                <div class="flex mx-5 my-3 rounded-md drop-shadow-md">
+                <div class="flex my-3 rounded-md drop-shadow-md">
                     <a href="#" class="flex items-center">
                         <div class="w-36 h-36 overflow-hidden rounded-l-md">
                             <img src="https://www.ihewro.com/usr/uploads/2023/01/1752784567.png"
@@ -359,7 +359,7 @@
                     </div>
                 </div>
                 <!--文章3-->
-                <div class="flex flex-col pt-28 pb-6 px-8 mx-5 my-3 rounded-md bg-cover space-y-5 drop-shadow-md"
+                <div class="flex flex-col pt-28 pb-6 px-8 my-3 rounded-md bg-cover space-y-5 drop-shadow-md text-white"
                      style="background-image: url(https://www.ihewro.com/usr/uploads/2022/10/2974733431.jpg)">
                     <div>
                         <div></div>
@@ -397,6 +397,10 @@
                         </div>
                     </div>
                 </div>
+                <footer class="text-xs flex justify-between bg-white py-4 px-2 rounded-md mt-8 mb-3">
+                    <span class="block">© 2023 All rights reserved.</span>
+                    <a class="block hover:text-gray-800">京ICP备17006801号-2 </a>
+                </footer>
             </main>
             <!--右半边-->
             <aside class="flex flex-col w-1/5 text-gray-500 text-sm px-3 py-6 bg-gray-50 drop-shadow-md">
